@@ -1,0 +1,11 @@
+{
+    "name": "muz4k/php-project-lvl2",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Victory Muzychuk",
+            "email": "muz4k.oo@gmail.com"
+        }
+    ],
+    "require": {}
+}
