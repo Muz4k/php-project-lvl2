@@ -1,16 +1,17 @@
 {
-    "name": "hexlet/code",
-    "type": "project",
-    "authors": [
-        {
-            "name": "Victory Muzychuk",
-            "email": "muz4k.oo@gmail.com"
-        }
-    ],
-   "bin": [
-        "bin/gendiff"
-        ],
-    "require": {
-        "docopt/docopt": "^1.0"
+  "name": "hexlet/code",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Victory Muzychuk",
+      "email": "muz4k.oo@gmail.com"
     }
+  ],
+  "bin": [
+    "bin/gendiff"
+  ],
+  "require": {
+    "docopt/docopt": "^1.0",
+    "ext-json": "*"
+  }
 }
