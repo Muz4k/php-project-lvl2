@@ -12,7 +12,8 @@ if (file_exists($autoloadPath1)) {
 }
 
 require_once __DIR__ . '/../src/docopt.php';
+require_once __DIR__ . '/../src/differ.php';
 
 $args = \Docopt::handle($doc);
-foreach ($args as $k=>$v)
-    echo $k.': '.json_encode($v).PHP_EOL;
+
+echo genDiff($args['<firstFile>'], $args['<secondFile>']);
