@@ -1,0 +1,2 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/76b0fc2d028c6779e4df/maintainability)](https://codeclimate.com/github/Muz4k/php-project-lvl2/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/76b0fc2d028c6779e4df/test_coverage)](https://codeclimate.com/github/Muz4k/php-project-lvl2/test_coverage)

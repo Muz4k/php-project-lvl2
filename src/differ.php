@@ -14,7 +14,7 @@ function genDiff($pathToFile1, $pathToFile2)
         $value2 = isset($json2[$key]) ? toString($json2[$key]) : null;
 
         if ($value1 === $value2) {
-            $result[$key] = "  {$key}: {$value1}";
+            $result[$key] = "    {$key}: {$value1}";
             continue;
         }
 
@@ -22,17 +22,17 @@ function genDiff($pathToFile1, $pathToFile2)
     }
 
     foreach ($diffResult as $key => $valueList) {
-        $res1 = '';
-        $res2 = '';
+        $diffList = [];
 
         if ($valueList[0] !== null) {
-            $res1 = "- {$key}: {$valueList[0]}";
+            $diffList[] = "  - {$key}: {$valueList[0]}";
         }
 
         if ($valueList[1] !== null) {
-            $res2 = "+ {$key}: {$valueList[1]}";
+            $diffList[] = "  + {$key}: {$valueList[1]}";
         }
-        $result[$key] = trim($res1 . PHP_EOL . $res2);
+
+        $result[$key] = implode(PHP_EOL, $diffList);
     }
 
     ksort($result);
